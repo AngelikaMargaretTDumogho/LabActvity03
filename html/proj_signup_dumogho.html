@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gender Equality Campaign - Signup</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Gender Equality Now!</h1>
+    <p class="tagline">Empowering All Genders, Building an Equal Future</p>
+  </header>
+
+  <main>
+    <form id="signupForm">
+      <label>First Name * <input type="text" id="firstName" /></label><span class="error" id="firstNameError"></span><br>
+      <label>Last Name * <input type="text" id="lastName" /></label><span class="error" id="lastNameError"></span><br>
+
+      <label>Sex * </label>
+      <label><input type="radio" name="sex" value="Male" /> Male</label>
+      <label><input type="radio" name="sex" value="Female" /> Female</label>
+      <label><input type="radio" name="sex" value="Prefer not to say" /> Prefer not to say</label>
+      <span class="error" id="sexError"></span><br>
+
+      <label>Email Address * <input type="text" id="email" /></label><span class="error" id="emailError"></span><br>
+      <label>Password * <input type="password" id="password" /></label><span class="error" id="passwordError"></span><br>
+      <label>Contact Number <input type="text" id="contact" /></label><br>
+      <label>Why you're supporting our campaign * 
+        <textarea id="supportReason"></textarea>
+      </label><span class="error" id="supportReasonError"></span><br>
+
+      <button type="submit">Join the Movement</button>
+    </form>
+  </main>
+</body>
+</html>

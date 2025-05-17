@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to the Campaign</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer>
+    window.onload = () => {
+      document.getElementById("displayFirstName").textContent = localStorage.getItem("firstName");
+      document.getElementById("displayLastName").textContent = localStorage.getItem("lastName");
+      document.getElementById("displayEmail").textContent = localStorage.getItem("email");
+      document.getElementById("displaySex").textContent = localStorage.getItem("sex");
+      document.getElementById("displayReason").textContent = localStorage.getItem("supportReason");
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Gender Equality Campaign</h1>
+    <p>Thank you for joining us in the fight for equal rights!</p>
+  </header>
+
+  <main>
+    <div class="profile">
+      <p><strong>First Name:</strong> <span id="displayFirstName"></span></p>
+      <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+      <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+      <p><strong>Sex:</strong> <span id="displaySex"></span></p>
+      <p><strong>Why I Support This Campaign:</strong><br><span id="displayReason"></span></p>
+    </div>
+  </main>
+</body>
+</html>
